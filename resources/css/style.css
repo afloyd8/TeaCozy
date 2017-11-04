@@ -9,18 +9,21 @@ body {
 
 header {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   border-bottom: 1px solid seashell;
   position: fixed;
   width: 100%;
   height: 69px;
   align-items: center;
+  z-index: 1;
 }
 
 .logo {
   padding-left: 10px;
   height: 50px;
-  width: 100%;
-  display: inline-flex;
+  width: 80%; /* NOTE: This sets the box for the logo to take up 80% of the space */
+  display: inline-flex; /* NOTE: Need to set the display to inline-flex or the logo will not resize */
 }
 
 nav span {
@@ -35,4 +38,27 @@ nav {
 
 a {
   color: seashell;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 69px;
+  margin: auto;
+}
+
+#mission {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  height: 700px;
+  width: 1200px;
+  text-align: center;
+}
+
+
+
+#mission .content {
+  width: 100%;
+  background-color: black;
+  justify-content: center;
 }
