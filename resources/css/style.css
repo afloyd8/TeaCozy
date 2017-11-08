@@ -5,6 +5,10 @@ body {
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 header {
@@ -42,23 +46,35 @@ a {
 
 .main {
   position: relative;
-  display: flex;
   flex-direction: column;
   padding-top: 69px;
-  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px solid seashell;
 }
 
 #mission {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
   height: 700px;
-  width: 1200px;
-  text-align: center;
+  border: 1px solid seashell;
 }
-
 
 
 #mission .content {
   width: 100%;
   background-color: black;
-  justify-content: center;
+  margin: auto; /* NOTE: Setting the margin to auto is what made the background around the next not take up the entire block */
+}
+
+#mission h2 {
+  margin: 10px;
+}
+
+#mission h4 {
+  padding-top: 15px;
+  margin: 10px;
 }
