@@ -123,3 +123,23 @@ a {
   background-color: black;
   flex-basis: 280px;
 }
+
+.footer {
+  height: 200px;
+}
+
+.footer h2 {
+  margin: 0px;
+  padding: 10px;
+  display: block;
+}
+
+.footer h5 {
+  display: block;
+  font-weight: bold;
+}
+
+.copyright {
+  text-align: left;
+  padding-left: 20px;
+}
